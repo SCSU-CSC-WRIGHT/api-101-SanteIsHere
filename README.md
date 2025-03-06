@@ -55,10 +55,25 @@ Ensure you have the following installed:
 Update this README file directly with the corresponding command for each question. Assume the top-level directory is `/home/activity2`, which contains two subdirectories: `proj1` and `proj2`. Show the command to achieve each of the following:
 
 1. **Copy all `.py` files from `proj1` to `proj2` (keeping file names unchanged):**
+```sh
+cp proj1/*.py proj2/
+```
 2. **Copy all `.py` files from `proj1` to the top-level directory (keeping file names unchanged):**
+```sh
+cp proj1/*.py ../
+```
 3. **Copy `p1.txt` from `proj1` to `proj2` as `p1_new.txt` (from top-level directory):**
+```sh
+cp ../proj1/p1.txt proj2/p1_new.txt
+```
 4. **Create a subdirectory `proj3` under the top-level directory and copy all contents of `proj1` to it:**
+```sh
+cp -r proj1/ ../proj3
+```
 5. **Run `p1.py` Flask application in the background and keep it running after disconnecting from the terminal:**
+```sh
+nohup python p1.py &
+```
 
 ---
 
